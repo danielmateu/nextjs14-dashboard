@@ -31,10 +31,6 @@ export default function Page() {
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
-          {/* <img src="/hero-desktop.png" alt="Hero image for desktop"/> */}
-          {/* <div
-            className="h-0 w-0 border-b-[30px] border-l-[20px] border-r-[20px] border-b-black border-l-transparent border-r-transparent"
-          /> */}
           <Image
             className='hidden sm:block'
             src={'/hero-desktop.png'}
