@@ -10,7 +10,6 @@ export default async function LatestInvoices({
   latestInvoices: LatestInvoice[];
 }) {
 
-  console.log(latestInvoices);
   return (
     <div className="flex w-full flex-col md:col-span-4 lg:col-span-4">
       <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
