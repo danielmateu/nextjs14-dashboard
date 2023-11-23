@@ -1,3 +1,5 @@
+import './ui/global.css';
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +7,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
-    </html>
+      <body>
+        {/* <h1>Dashboard</h1> */}
+        {children}
+      </body>
+    </html >
   );
 }
