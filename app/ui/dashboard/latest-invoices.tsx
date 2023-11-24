@@ -8,7 +8,7 @@ import { fetchLatestInvoices } from '@/app/lib/data';
 export default async function LatestInvoices() {
   const latestInvoices = await fetchLatestInvoices()
   return (
-    <div className="flex w-full flex-col md:col-span-4 lg:col-span-4">
+    <div className="flex w-full md:w-80 flex-col md:col-span-4 lg:col-span-4">
       <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
         Latest Invoices
       </h2>
@@ -36,7 +36,7 @@ export default async function LatestInvoices() {
                     height={32}
                   />
                   <div className="min-w-0">
-                    <p className="truncate text-sm font-semibold md:text-base">
+                    <p className="text-sm font-semibold md:text-base">
                       {invoice.name}
                     </p>
                     <p className="hidden text-sm text-gray-500 sm:block">
@@ -45,7 +45,7 @@ export default async function LatestInvoices() {
                   </div>
                 </div>
                 <p
-                  className={`${lusitana.className} truncate text-sm font-medium md:text-base`}
+                  className={`${lusitana.className} text-sm font-medium md:text-base`}
                 >
                   {invoice.amount}
                 </p>
