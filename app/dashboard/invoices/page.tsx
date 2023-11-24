@@ -6,9 +6,15 @@ import { lusitana } from '@/app/ui/fonts';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
 
-export default async function Page() {
-    const query = '';
-    const currentPage = 1;
+export default async function Page({ searchParams }: {
+    searchParams?: {
+        query: string;
+        page: number;
+    }
+}) {
+    const currentPage = Number(searchParams?.page) || 1;
+    const query = searchParams?.query || '';
+
     return (
         <div className="w-full">
             <div className="flex w-full items-center justify-between">
